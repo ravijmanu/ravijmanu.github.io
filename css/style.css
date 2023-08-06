@@ -3,29 +3,32 @@
 * {
 	margin: 0;
 	padding: 0;
-	/* box-sizing: border-box; */
 }
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: #f1f1f1;
-	position: relative;
-	padding-bottom: 58px;
-	min-height: 100vh;
+	/* position: absolute; */
+	/* padding-bottom: 58px; */
+	/* min-height: 100vh; */
+	/* min-height: 100%; */
+	/* position: relative; */
+	overflow-x: hidden;
 }
 
 header {
 	/* text-align: center; */
 	background-color: #333;
-	color: #fff;
-	padding-left: 30px;
+	/* color: #fff; */
+	padding: 0px;
+	overflow: hidden;
 }
 
 
 main {
-	width: 90vw;
-	margin: 0 auto;
-	padding: 30px 20px;
+	/* width: 90vw; */
+	/* margin: 0 auto; */
+	/* padding: 30px 20px; */
 	/* min-height: calc(100vh - 211px - 58px); */
 }
 
@@ -40,8 +43,8 @@ article:last-child {
 	margin-bottom: 0;
 }
 
-article h3 {
-	margin: 10px 0 25px 0;
+article h2 {
+	margin: 20px 0 10px 0;
 }
 
 article p {
@@ -55,65 +58,30 @@ footer {
 	color: #fff;
 	padding: 20px;
 	position: absolute;
-	bottom: 0;
-	width: 100%;
-	/* position: fixed;
-	  z-index: 1; */
+	/* bottom: 10; */
+	/* width: 100%; */
+	overflow: hidden;
 }
 
-/* @media(max-width:768px) {
-	header {
-	  padding: 30px 20px;
-	}
 
-	header h1 {
-	  font-size: 36px;
-	  margin-bottom: 22px;
-	}
-
-	header p {
-	  font-size: 18px;
-	}
-
-	main {
-	  width: 100vw;
-	  padding: 20px;
-	}
-
-	article {
-	  margin-bottom: 16px;
-	  font-size: 14px;
-	}
-
-	article h3 {
-	  margin: 10px 0 20px 0;
-	}
-
-	article p {
-	  margin-top: 16px;
-	  line-height: 20px;
-	}
-  } */
-
-
-.navbar {
-	position: relative;
+/* .navbar {
+	position: center;
 	height: 80px;
 	width: 100%;
 	top: 0;
 	left: 0;
-	/* background: rgba(0, 0, 0, 0.4); */
-}
+} */
 
 .navbar .logo {
 	width: 140px;
 	height: auto;
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 .navbar ul {
 	float: right;
 	margin-right: 20px;
+	padding-top: 20px;
 }
 
 .navbar ul li {
@@ -127,9 +95,10 @@ footer {
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 	color: white;
-	padding: 6px 13px;
+	/* padding: 6px 13px; */
 	text-decoration: none;
-	transition: .4s;
+	/* transition: .4s;  */     /*meka danna epa*/
+	position: relative;
 }
 
 .navbar ul li a.active,
@@ -138,25 +107,10 @@ footer {
 	border-radius: 2px;
 }
 
-/* .wrapper .center {
-	position: absolute;
-	left: 50%;
-	top: 55%;
-	transform: translate(-50%, -50%);
-	font-family: sans-serif;
-	user-select: none;
-  } */
-
-/* Reset default margin and padding for all elements */
-/* body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-} */
 
 /* Set a minimum height for the body to make sure footer is always at the bottom */
 body {
-	min-height: 50%;
+	min-height: 100%;
 	position: relative;
 	overflow-x: hidden;
 }
@@ -166,11 +120,14 @@ footer {
 	background-color: #333;
 	background-position: relative;
 	text-align: center;
-	padding: 20px;
-	position: absolute;
+	padding: 0px;
+	/* position: absolute; */
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	overflow: hidden;
+
+
 }
 
 footer a {
@@ -180,16 +137,63 @@ footer a {
 	/* Set link color */
 	font-size: 16px;
 	/* Set font size */
+	margin: 0 0px;
+	/* Add some spacing between the links */
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+	padding:5px;
+
+}
+
+footer p{
+	font-size: 16px;
+	/* Set font size */
 	margin: 0 5px;
 	/* Add some spacing between the links */
-	font-size: 15px;
 	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+
 }
 
 .header {
 	border: 0px;
 	padding: 0px;
+	overflow: hidden;
 }
+
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+
+@media screen and (max-width: 500px) {
+	.header {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	
+	.header ul li a{
+	  float: none;
+	}
+
+	.footer {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.header a {
+		float: none;
+	}
+  }
 
 .menu {
 	width: 2%;
@@ -222,14 +226,14 @@ footer a {
 	float: left;
 	padding-top: 30px;
 	border: 0px;
-}
+} 
 
 #map {
 	height: 400px;
 	width: 400px;
+
 }
 
 /* .main article a{
 	text-decoration: none;
 } */
-
