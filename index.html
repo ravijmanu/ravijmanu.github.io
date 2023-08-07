@@ -36,7 +36,9 @@
     .main>article {
       display: grid;
       grid-template-columns: auto auto auto;
-      gap: 10px 50px;
+      
+      gap: 10px;
+      /* padding-right: 50px; */
     }
 
     .main a {
@@ -44,6 +46,8 @@
       font-size: 15px;
       font-family: 'Roboto', sans-serif;
       color: #045c92;
+      padding-right: 10px;
+
     }
 
     .span {
@@ -53,6 +57,19 @@
 
     h1 {
       grid-column: span 3 /span 3;
+
+    }
+
+    @media screen and (max-width: 500px) {
+
+      .main>article {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        float: left;
+        gap: 1px;
+        overflow-x: auto;
+        padding-right: 10px;
+      }
     }
   </style>
 
@@ -79,11 +96,7 @@
       </div>
     </header>
   </div>
-  <div>
-    <div style="font-size: 14px; margin: 10px 0;">Advertisement</div>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2271725792149389"
-      crossorigin="anonymous"></script>
-  </div>
+
   <div>
     <div style="font-size: 14px; margin: 10px 0;">Advertisement</div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2271725792149389"
@@ -363,6 +376,12 @@
         href="cumming.html">CUMMING</a><a href="cupertino.html">CUPERTINO</a><a href="cuyama.html">CUYAMA</a><a
         href="cy-of-indstry.html">CY OF INDSTRY</a><a href="cy-of-industy.html">CY OF INDUSTY</a><a
         href="cypress.html">CYPRESS</a>
+      <div class="span">
+        <div style="font-size: 14px; margin: 10px 0;">Advertisement</div>
+        <script async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2271725792149389"
+          crossorigin="anonymous"></script>
+      </div>
       <h1>D</h1><a href="dade-city.html">DADE CITY</a><a href="dallas.html">Dallas</a><a href="dalton.html">DALTON</a><a
         href="dalton-gardens.html">DALTON GARDENS</a><a href="daly-city.html">DALY CITY</a><a
         href="dana-point.html">DANA POINT</a><a href="danbury.html">DANBURY</a><a href="dania.html">DANIA</a><a
@@ -1406,9 +1425,9 @@
           (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
       </div>
-      
-      
-      
+
+
+
 
     </article>
   </div>
