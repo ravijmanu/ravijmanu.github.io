@@ -37,6 +37,8 @@ article {
 	padding: 20px;
 	margin-bottom: 20px;
 	border-radius: 5px;
+	overflow: hidden;
+	
 }
 
 article:last-child {
@@ -47,20 +49,50 @@ article h2 {
 	margin: 20px 0 10px 0;
 }
 
+
+
 article p {
 	margin-top: 16px;
 	line-height: 24px;
 }
+@media screen and (max-width: 500px) {
+	article {
+		background-color: #fff;
+		/* padding: 0px;
+		margin-bottom: 20px;
+		border-radius: 5px; */
+		overflow: auto;
+		width: 100%;
+		position: center;
+	}
+	
+	/* article:last-child {
+		margin-bottom: 0;
+	}
+	
+	article h2 {
+		margin: 20px 0 10px 0;
+	}
+	
+	
+	
+	article p {
+		margin-top: 16px;
+		line-height: 24px;
+	} */
+}
+
+
 
 footer {
 	text-align: center;
 	background-color: #333;
 	color: #fff;
-	padding: 20px;
-	position: absolute;
+	/* padding: 0px; */
+	/* position: absolute; */
 	/* bottom: 10; */
 	/* width: 100%; */
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 
@@ -117,16 +149,27 @@ body {
 
 /* Styling for the footer */
 footer {
-	background-color: #333;
-	background-position: relative;
-	text-align: center;
+	/* background-color: #333; */
+	/* background-position: relative; */
+	/* text-align: center; */
 	padding: 0px;
 	/* position: absolute; */
-	bottom: 0;
-	left: 0;
-	width: 100%;
+	/* bottom: 0; */
+	/* left: 0; */
+	/* width: 100%; */
 	overflow: hidden;
+	padding-bottom: 10px;
 
+
+}
+
+footer p{
+	font-size: 16px;
+	/* Set font size */
+	margin: 0 5px;
+	/* Add some spacing between the links */
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
 
 }
 
@@ -140,20 +183,11 @@ footer a {
 	margin: 0 0px;
 	/* Add some spacing between the links */
 	font-family: 'Roboto', sans-serif;
-	overflow: hidden;
 	padding:5px;
 
 }
 
-footer p{
-	font-size: 16px;
-	/* Set font size */
-	margin: 0 5px;
-	/* Add some spacing between the links */
-	font-family: 'Roboto', sans-serif;
-	overflow: hidden;
 
-}
 
 .header {
 	border: 0px;
@@ -176,7 +210,7 @@ footer p{
 @media screen and (max-width: 500px) {
 	.header {
 	  float: none;
-	  display: block;
+	  display: inline;
 	  text-align: left;
 	}
 	
@@ -192,6 +226,10 @@ footer p{
 
 	.header a {
 		float: none;
+	}
+
+	article {
+		max-width: max-content;
 	}
   }
 
