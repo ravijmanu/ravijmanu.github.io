@@ -1,259 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
 
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: #f1f1f1;
-	/* position: absolute; */
-	/* padding-bottom: 58px; */
-	/* min-height: 100vh; */
-	/* min-height: 100%; */
-	/* position: relative; */
-	overflow-x: hidden;
-}
-
-header {
-	/* text-align: center; */
-	background-color: #333;
-	/* color: #fff; */
-	padding: 0px;
-	overflow: hidden;
-}
-
-
-main {
-	/* width: 90vw; */
-	/* margin: 0 auto; */
-	/* padding: 30px 20px; */
-	/* min-height: calc(100vh - 211px - 58px); */
-}
-
-article {
-	background-color: #fff;
-	padding: 20px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-	overflow: hidden;
-
-}
-
-article:last-child {
-	margin-bottom: 0;
-}
-
-article h2 {
-	margin: 20px 0 10px 0;
-}
-
-
-
-article p {
-	margin-top: 16px;
-	line-height: 24px;
-}
-
-@media screen and (max-width: 1080px) {
-
-	.menu {
-		display: none;
-	}
-
-	.main {
-		width: 100%;
-		padding: 0px;
-		left: 0;
-		
-		/* margin: 0	; */
-	}
-
-	.right {
-		margin: 0;
-	}
-
-	.header {
-		float: none;
-		display: inline;
-		text-align: left;
-	}
-
-	.header ul li a {
-		float: none;
-	}
-
-	.footer {
-		float: none;
-		display: inline;
-		text-align: left;
-	}
-
-	.header a {
-		float: none;
-	}
-
-
-	.main >article {
-		background-color: #fff;
-		padding: 0px;
-		margin-bottom: 20px;
-		border-radius: 5px;
-		overflow: hidden;
-		position: left;float: none;
-		display: inline;
-		text-align: left;
-
-		
-	}
-	
-
-	.main article:last-child {
-		margin: 0;
-	}
-
-	/* article h2 {
-		margin: 20px 0 10px 0;
-	}
-	
-	
-	
-	article p {
-		margin-top: 16px;
-		line-height: 24px;
-	} */
-}
-
-
-
-
-footer {
-	text-align: center;
-	background-color: #333;
-	color: #fff;
-	/* padding: 0px; */
-	/* position: absolute; */
-	/* bottom: 10; */
-	/* width: 100%; */
-	/* overflow: hidden; */
-}
-
-
-/* .navbar {
-	position: center;
-	height: 80px;
-	width: 100%;
-	top: 0;
-	left: 0;
-} */
-
-.navbar .logo {
-	width: 140px;
-	height: auto;
-	padding: 10px 0;
-}
-
-.navbar ul {
-	float: right;
-	margin-right: 20px;
-	padding-top: 20px;
-}
-
-.navbar ul li {
-	list-style: none;
-	margin: 0 8px;
-	display: inline-block;
-	line-height: 80px;
-}
-
-.navbar ul li a {
-	font-size: 20px;
-	font-family: 'Roboto', sans-serif;
-	color: white;
-	/* padding: 6px 13px; */
-	text-decoration: none;
-	/* transition: .4s;  */
-	/*meka danna epa*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    position: relative;
+    /* overflow-x: hidden; */
+    max-width: 100%;
+    /* min-height: 100%;
 	position: relative;
-}
-
-.navbar ul li a.active,
-.navbar ul li a:hover {
-	background: red;
-	border-radius: 2px;
-}
-
-
-/* Set a minimum height for the body to make sure footer is always at the bottom */
-body {
-	min-height: 100%;
+	overflow-x: hidden; */
+    padding: 0;min-height: 100%;
 	position: relative;
 	overflow-x: hidden;
 }
-
-/* Styling for the footer */
-footer {
-	/* background-color: #333; */
-	/* background-position: relative; */
-	/* text-align: center; */
-	padding: 0px;
-	/* position: absolute; */
-	/* bottom: 0; */
-	/* left: 0; */
-	/* width: 100%; */
-	overflow: hidden;
-	padding-bottom: 10px;
-
-
-}
-
-footer p {
-	font-size: 16px;
-	/* Set font size */
-	margin: 0 5px;
-	/* Add some spacing between the links */
-	font-family: 'Roboto', sans-serif;
-	overflow: hidden;
-
-}
-
-footer a {
-	text-decoration: none;
-	/* Remove underlines from links */
-	color: white;
-	/* Set link color */
-	font-size: 16px;
-	/* Set font size */
-	margin: 0 0px;
-	/* Add some spacing between the links */
-	font-family: 'Roboto', sans-serif;
-	padding: 5px;
-
-}
-
-
-
-.header {
-	border: 0px;
-	padding: 0px;
-	overflow: hidden;
-}
-
-.header a {
-	float: left;
-	color: black;
-	text-align: center;
-	padding: 12px;
-	text-decoration: none;
-	font-size: 18px;
-	line-height: 25px;
-	border-radius: 4px;
-}
-
-
-
-
 
 .menu {
 	width: 2%;
@@ -280,20 +45,366 @@ footer a {
 	border: 0px solid;
 }
 
-.footer {
-	width: 100%;
-	position: relative;
-	float: left;
-	padding-top: 30px;
+
+.header {
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
 	border: 0px;
+	padding: 0px;
 }
 
-#map {
-	height: 400px;
-	width: 400px;
-
-}
-
-/* .main article a{
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
 	text-decoration: none;
-} */
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.navbar .logo {
+    width: 140px;
+    height: auto;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 6px 13px;
+    text-decoration: none;
+    /* transition: .4s;  */
+    /*meka danna epa*/
+    position: relative;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: red;
+    border-radius: 2px;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+article h2 {
+    margin: 20px 0 10px 0;
+}
+
+
+
+article p {
+    margin-top: 16px;
+    line-height: 24px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+    padding-bottom: 10px;
+    width: 100%;
+    position: relative;
+    float: left;
+    padding-top: 30px;
+    border: 0px;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin: 0 0px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.menu {
+		display: none;
+	}
+
+	.main {
+		width: 100%;
+		padding: 5px;
+		left: 0;
+	}
+
+	.right {
+		margin: 0;
+	}
+
+	header {
+		float: none;
+		display: contents;
+		text-align: left;
+		border: 0;
+		padding: 0;
+	}
+
+	header ul li a {
+		float: none;
+	}
+
+	.footer {
+		/* float: none;
+		display: inline;
+		text-align: left;
+	} */
+
+		width: 100%;
+		/* Make the footer span the full width of the screen */
+		padding: 20px;
+		/* Add some padding to the footer area */
+		box-sizing: border-box;
+		/* Include padding and border in the element's total width */
+		background-color: #333;
+		color: #fff;
+		text-align: center;
+		/* Optional: Center the content horizontally in the footer */
+		float: left;
+	}
+
+	.header a {
+		float: none;
+	}
+
+
+	article {
+		background-color: #fff;
+		padding: 0px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		position: relative;
+		float: none;
+		display: block;
+		text-align: left;
+		box-sizing: border-box;
+
+
+	}
+
+
+	article:last-child {
+		margin: 0;
+	}
+
+	 article h2 {
+		margin: 20px 0 10px 0;
+	}
+	
+	
+	/*
+	article p {
+		margin-top: 16px;
+		line-height: 24px;
+	} */
+}
+
+
+@media screen and (max-width: 500px) {
+
+	.menu {
+		display: none;
+	}
+
+	.main {
+		width: 100%;
+		padding: 5px;
+		left: 0;
+	}
+
+	.right {
+		margin: 0;
+	}
+
+	header {
+		float: none;
+		display: contents;
+		text-align: left;
+		border: 0;
+		padding: 0;
+	}
+
+	header ul li a {
+		float: none;
+	}
+
+	.footer {
+		/* float: none;
+		display: inline;
+		text-align: left;
+	} */
+
+		width: 100%;
+		/* Make the footer span the full width of the screen */
+		padding: 20px;
+		/* Add some padding to the footer area */
+		box-sizing: border-box;
+		/* Include padding and border in the element's total width */
+		background-color: #333;
+		color: #fff;
+		text-align: center;
+		/* Optional: Center the content horizontally in the footer */
+		float: left;
+	}
+
+	.header a {
+		float: none;
+	}
+
+
+	article {
+		background-color: #fff;
+		padding: 0px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		position: relative;
+		float: none;
+		display: block;
+		text-align: left;
+		box-sizing: border-box;
+
+
+	}
+
+
+	article:last-child {
+		margin: 0;
+	}
+
+	 article h2 {
+		margin: 20px 0 10px 0;
+	}
+	
+	
+	/*
+	article p {
+		margin-top: 16px;
+		line-height: 24px;
+	} */
+}
+
+@media screen and (max-width: 430px) {
+
+	.menu {
+		display: none;
+	}
+
+	.main {
+		width: 100%;
+		padding: 5px;
+		left: 0;
+	}
+
+	.right {
+		margin: 0;
+	}
+
+	header {
+		float: none;
+		display: contents;
+		text-align: left;
+		border: 0;
+		padding: 0;
+	}
+
+	header ul li a {
+		float: none;
+	}
+
+	.footer {
+		/* float: none;
+		display: inline;
+		text-align: left;
+	} */
+
+		width: 100%;
+		/* Make the footer span the full width of the screen */
+		padding: 20px;
+		/* Add some padding to the footer area */
+		box-sizing: border-box;
+		/* Include padding and border in the element's total width */
+		background-color: #333;
+		color: #fff;
+		text-align: center;
+		/* Optional: Center the content horizontally in the footer */
+		float: left;
+	}
+
+	.header a {
+		float: none;
+	}
+
+
+	article {
+		background-color: #fff;
+		padding: 0px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		position: relative;
+		float: none;
+		display: block;
+		text-align: left;
+		box-sizing: border-box;
+
+
+	}
+
+
+	article:last-child {
+		margin: 0;
+	}
+
+	 article h2 {
+		margin: 20px 0 10px 0;
+	}
+	
+	
+	/*
+	article p {
+		margin-top: 16px;
+		line-height: 24px;
+	} */
+}
+
+
+
