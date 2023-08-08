@@ -35,8 +35,8 @@
   <style>
     article {
       display: grid;
-      grid-template-columns: auto auto auto;
-      gap: 20px;
+      grid-template-columns: repeat(3, 350px);
+      gap: 10px;
       /* padding-right: 50px; */
     }
     
@@ -60,8 +60,29 @@
 
     }
 
-  </style>
+    @media screen and (max-width: 1080px) {
+      article{
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+      gap: 10px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      article{
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+      gap: 10px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      article{
+        display: grid;
+        grid-template-columns: repeat(3, 110px);
+      gap: 10px;
+      }
+    }
 
+  </style>
 </head>
 
 <body>
