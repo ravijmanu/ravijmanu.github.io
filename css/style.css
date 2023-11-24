@@ -9,15 +9,16 @@
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f1f1f1;
-    position: relative;
-    /* overflow-x: hidden; */
-    max-width: 100%;
-    /* min-height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f1f1f1;
+	position: relative;
+	/* overflow-x: hidden; */
+	max-width: 100%;
+	/* min-height: 100%;
 	position: relative;
 	overflow-x: hidden; */
-    padding: 0;min-height: 100%;
+	padding: 0;
+	min-height: 100%;
 	position: relative;
 	overflow-x: hidden;
 }
@@ -49,9 +50,9 @@ body {
 
 
 .header {
-    background-color: #333;
-    color: #fff;
-    overflow: hidden;
+	background-color: #333;
+	color: #fff;
+	overflow: hidden;
 	border: 0px solid;
 	padding: 0px;
 }
@@ -68,99 +69,170 @@ body {
 }
 
 .navbar .logo {
-    width: 140px;
-    height: auto;
-    padding: 10px 0;
+	width: 140px;
+	height: auto;
+	padding: 10px 0;
 }
 
 .navbar ul {
-    float: right;
-    margin-right: 0px;
-    padding-top: 20px;
+	float: right;
+	margin-right: 0px;
+	padding-top: 20px;
 }
 
 .navbar ul li {
-    list-style: none;
-    margin: 0 8px;
-    display: inline-block;
-    line-height: 80px;
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
 }
 
 .navbar ul li a {
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    padding: 6px 13px;
-    text-decoration: none;
-    /* transition: .4s;  */
-    /*meka danna epa*/
-    position: relative;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	/* transition: .4s;  */
+	/*meka danna epa*/
+	position: relative;
 }
 
 .navbar ul li a.active,
 .navbar ul li a:hover {
-    background: red;
-    border-radius: 2px;
+	background: red;
+	border-radius: 2px;
 }
 
 article {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    overflow: hidden;
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	overflow: hidden;
 
 }
 
 article:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 article h2 {
-    margin: 20px 0 10px 0;
+	margin: 20px 0 10px 0;
 }
 
+article a {
+	text-decoration: none;
+	color: rgb(119, 0, 143);
+	font-size: 20px;
+	margin: 0 0px;
+	font-family: 'Roboto', sans-serif;
+	padding: 5px;
+}
 
+article h1 {
+	text-decoration: none;
+	color: rgb(47, 47, 47);
+	font-size: 28px;
+	margin: 0 0px;
+	font-family: 'Roboto', sans-serif;
+	padding: 5px;
+}
+
+article h3 {
+	text-decoration: none;
+	color: rgb(49, 175, 114);
+	font-size: 20px;
+	margin: 0 0px;
+	font-family: 'Roboto', sans-serif;
+
+	padding: 0px;
+}
+
+.article table {
+	color: rgb(50, 50, 50);
+	font-size: 20px;
+	margin: 0 0px;
+	font-family: 'Roboto', sans-serif;
+}
 
 article p {
-    margin-top: 16px;
-    line-height: 24px;
+	margin-top: 16px;
+	line-height: 24px;
 }
 
 footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    overflow: hidden;
-    padding-bottom: 10px;
-    width: 100%;
-    position: relative;
-    float: left;
-    padding-top: 30px;
-    border: 0px;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	overflow: hidden;
+	padding-bottom: 10px;
+	width: 100%;
+	position: relative;
+	float: left;
+	padding-top: 30px;
+	border: 0px;
 }
 
 footer p {
-    font-size: 16px;
-    margin: 0 5px;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+	font-size: 16px;
+	margin: 0 5px;
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
 
 }
 
 footer a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    margin: 0 0px;
-    font-family: 'Roboto', sans-serif;
-    padding: 5px;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	margin: 0 0px;
+	font-family: 'Roboto', sans-serif;
+	padding: 5px;
+
+}
+
+/* .main a {
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	color: #045c92;
+	line-height: 30px;
+} */
+
+#datasetinfotable {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#datasetinfotable td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#datasetinfotable tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#datasetinfotable tr:hover {
+	background-color: #ddd;
+}
+
+#datasetinfotable th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	/* background-color: #04AA6D; */
+	color: #000;
+	padding-left: 5px;
+	border: 1px solid #ddd;
 
 }
 
 @media screen and (max-width: 1080px) {
 
-	*{
+	* {
 		max-width: 100%;
 	}
 
@@ -176,10 +248,10 @@ footer a {
 
 	.right {
 		margin: 0;
-	}	
-	
+	}
 
-	
+
+
 
 	.header a {
 		float: none;
@@ -206,11 +278,11 @@ footer a {
 		padding: 0;
 	}
 
-	 .article h2 {
-		margin: 	0px 0 0px 0;
+	.article h2 {
+		margin: 0px 0 0px 0;
 	}
-	
-	
+
+
 	/*
 	.article p {
 		margin-top: 16px;
@@ -220,7 +292,7 @@ footer a {
 
 @media screen and (max-width: 768px) {
 
-	*{
+	* {
 		max-width: 100%;
 	}
 
@@ -236,10 +308,10 @@ footer a {
 
 	.right {
 		margin: 0;
-	}	
-	
+	}
 
-	
+
+
 
 	.header a {
 		float: none;
@@ -266,11 +338,11 @@ footer a {
 		padding: 0;
 	}
 
-	 .article h2 {
-		margin: 	0px 0 0px 0;
+	.article h2 {
+		margin: 0px 0 0px 0;
 	}
-	
-	
+
+
 	/*
 	.article p {
 		margin-top: 16px;
@@ -280,7 +352,7 @@ footer a {
 
 @media screen and (max-width: 480px) {
 
-	*{
+	* {
 		max-width: 100%;
 	}
 
@@ -296,10 +368,10 @@ footer a {
 
 	.right {
 		margin: 0;
-	}	
-	
+	}
 
-	
+
+
 
 	.header a {
 		float: none;
@@ -326,11 +398,11 @@ footer a {
 		padding: 0;
 	}
 
-	 .article h2 {
-		margin: 	0px 0 0px 0;
+	.article h2 {
+		margin: 0px 0 0px 0;
 	}
-	
-	
+
+
 	/*
 	.article p {
 		margin-top: 16px;
@@ -340,11 +412,5 @@ footer a {
 
 #map {
 	height: 400px;
-	width: 400px;
-
+	width: 800px;
 }
-
-
-
-
-
