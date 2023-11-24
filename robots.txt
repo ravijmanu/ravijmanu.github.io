@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://cabusinessmaps.me/sitemap.xml
+Sitemap: https://cabusinessmaps.me/sitemap-3.xml
